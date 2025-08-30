@@ -1,11 +1,13 @@
-function App() {
+import React from 'react';
+import { LeaderboardProvider } from './context/LeaderboardContext';
+import HomePage from './pages/HomePage';
+import { Toaster } from 'react-hot-toast';
+const App: React.FC = () => {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline text-red-400">
-        Võ Chí Thanh
-      </h1>
-    </>
+    <LeaderboardProvider>
+      <HomePage /> <Toaster position="top-right" reverseOrder={false} />
+    </LeaderboardProvider>
   );
-}
+};
 
 export default App;
