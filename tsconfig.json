@@ -2,12 +2,6 @@
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" },
-    {
-      "compilerOptions": {
-        "types": ["vite-plugin-eslint"]
-      },
-      "include": ["src", "src/types"]
-    }
+    { "path": "./tsconfig.node.json" }
   ]
 }
